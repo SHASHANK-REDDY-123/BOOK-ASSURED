@@ -106,7 +106,6 @@
             padding: 20px;
         }
 
-        /* Styling for the navigation */
 #navigation {
     position: fixed;
     top: 50%;
@@ -121,14 +120,13 @@
 }
 
 #navigation img {
-    width: 50px; /* Adjust the width and height for your circular images */
+    width: 50px; 
     height: 50px;
-    border-radius: 50%; /* Creates circular shape */
+    border-radius: 50%; 
     cursor: pointer;
     display: block;
 }
 
-/* Existing navigation styles */
 #navigation {
     position: fixed;
     top: 50%;
@@ -143,42 +141,39 @@
 }
 
 #navigation img {
-    width: 50px; /* Adjust the width and height for your circular images */
+    width: 50px;
     height: 50px;
-    border-radius: 50%; /* Creates circular shape */
+    border-radius: 50%; 
     cursor: pointer;
     display: block;
     transition: transform 0.3s ease-out;
 }
 
-/* Text for each section */
 .section-text {
     opacity: 0;
     transition: opacity 0.3s ease-out;
     position: absolute;
     top: 50%;
-    left: -70px; /* Initial position outside the viewport */
+    left: -70px; 
     transform: translateY(-50%);
     white-space: nowrap;
 }
 
-/* Hover effect */
 #navigation li:hover img {
-    transform: translateX(-10px); /* Move image to the left on hover */
+    transform: translateX(-10px); 
 }
 
 #navigation li:hover .section-text {
-    opacity: 1; /* Display text on hover */
-    left: 60px; /* Move text into view */
+    opacity: 1; 
+    left: 60px; 
 }
 
-/* CSS for the 'Go to Top' button */
 #goToTopBtn {
-    display: none; /* Hide the button by default */
-    position: fixed; /* Fixed position for the button */
+    display: none; 
+    position: fixed; 
     bottom: 20px;
     right: 20px;
-    z-index: 99; /* Ensure it's above other elements */
+    z-index: 99; 
     padding: 10px 15px;
     font-size: 16px;
     border: none;
@@ -199,13 +194,11 @@
 
     <script>
 
-        // JavaScript to show/hide the button based on scroll position and to handle scrolling to top
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     var goToTopButton = document.getElementById("goToTopBtn");
 
-    // Show button after scrolling down 20px from the top
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         goToTopButton.style.display = "block";
     } else {
@@ -213,10 +206,9 @@ function scrollFunction() {
     }
 }
 
-// Function to scroll to the top of the page smoothly
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
     </script>
@@ -225,10 +217,6 @@ function topFunction() {
 
     
     <button onclick="topFunction()" id="goToTopBtn" title="Go to top"> <img src="https://svgsilh.com/svg_v2/975989.svg" alt="Top" width="10">   </button>
-
-
- 
-        <!-- Existing content -->
 
     <header class="menu-box">
         <h1 style="text-decoration: underline; color: #333;">Our Book-Shelf</h1>

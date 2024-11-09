@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <title>Contact - Book Assured</title>
   <style>
-    /* Reset some default styles */
     body, h1, form {
       margin: 0;
       padding: 0;
       background-image: url(https://i.pinimg.com/564x/18/db/e1/18dbe1269281a46f9064eb5efae42dbc.jpg);
     }
 
-    /* Basic styling for the form */
     body {
       font-family: Arial, sans-serif;
     }
@@ -74,20 +72,17 @@
 
   <script>
     document.getElementById("contactForm").addEventListener("submit", function(event) {
-      event.preventDefault(); // Prevents the form from submitting and reloading the page
+      event.preventDefault();
       
-      // Fetch values from the form
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
 
-      // You can add further actions here, such as sending the data to a server or displaying a confirmation message
       console.log("Name: ", name);
       console.log("Email: ", email);
       console.log("Message: ", message);
 
-      // Redirect to Homepage.html (change this to your actual homepage)
-      window.location.href = "Homepage.html";
+      window.location.href = "index.html";
     });
   </script>
 </body>

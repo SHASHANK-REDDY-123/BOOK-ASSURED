@@ -43,10 +43,10 @@ nav a {
     color: black;
     margin-right: 20px;
     position: relative;
-    transition: color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Add transition for color, box-shadow, and background-color change */
+    transition: color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     display: inline-block;
     padding: 10px 20px;
-    border: 2px solid #3498db; /* Light blue color for the border */
+    border: 2px solid #3498db; 
     border-radius: 5px;
 }
 
@@ -64,9 +64,9 @@ nav a::before {
 }
 
 nav a:hover {
-    color: #fff; /* Change text color to white on hover */
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Add a glow effect on hover */
-    background-color: #3498db; /* Light blue color on hover */
+    color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); 
+    background-color: #3498db; 
 }
 
 nav a:hover::before {
